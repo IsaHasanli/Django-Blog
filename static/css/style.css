@@ -1,0 +1,121 @@
+.myform{
+    padding: 0px 15%;
+    background-color: rgba(0, 54, 32, 0.87);
+    margin: 50px 10% !important;
+    border-radius: 15px;
+    box-shadow: rgba(0, 106, 63, 0.87) 0px 9px 24px;
+}
+.mybuttondiv{
+    display: flex;
+    justify-content: space-between;
+}
+.mybutton{
+    width: 100px;
+    background-color: rgb(241, 231, 213);
+    color: black;
+}
+.navhover{
+    transition: 0.7s;
+    border: 1.5px solid !important;
+    border-color: rgb(240, 191, 76) !important;
+    border-radius: 10px;
+}
+.navhover:hover{
+    border-color: white !important;
+}
+.mynav{
+    font-size: 20px;
+}
+body{
+    background-color:lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.messages li{
+    list-style: none;
+}
+.mycard{
+    margin: 0px 15%;
+    background-color: rgba(0, 54, 32, 0.87);
+    border-radius: 15px;
+    box-shadow: rgba(0, 106, 63, 0.87) 0px 9px 24px;
+    font-size: 18px;
+}
+.dateclass{
+    font-size: 10px;
+}
+.divclass{
+    width: 100% !important;
+}
+
+.my-flex{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.footer{
+    background-color:rgb(0, 15, 41);
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: red;
+}
+ /* .content{
+    padding-top: 97px; 
+} */
+
+.scrollspy-example{
+    padding-top: 250px;
+    padding-left: 110px;
+}
+.profil_image{
+    width: 140px;
+    height: 211px;
+    padding: 4px;
+}
+.mylist a{
+    border:1px solid black;
+    height: 40px;
+}
+.mylist a:hover{
+    border:1px solid blue;
+}
+.mylist a:focus{
+    border:1px solid red;
+}
+.languages svg{
+    margin: 100px !important; 
+}
+.my-fixed{
+    top: 97px;
+    height: 100%;
+}
+.aboutt{
+    padding-left: 575px;
+}
+.hometext1{
+    position: absolute;
+    height: 70px;
+    background-color: darkgreen;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+.hometext{
+    position: absolute;
+    padding-left: 550px;
+    width: 100%;
+    color: white;
+    z-index: 2;
+    padding-top: 10px;
+}
+/* .opak{
+    position: absolute;
+    opacity: 0.5;
+    width: 1500;
+    height: 1500;
+} */

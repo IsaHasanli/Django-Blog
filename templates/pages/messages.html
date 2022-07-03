@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+{% block content %}
+<div>
+    {% for message in messages %}
+    <div class="mycard my-4 text-light card">
+        <div class="card-body">
+            {% comment %} <h4 class="card-title">E-mail: </h4>
+            <p class="card-text">{{message}}</p> {% endcomment %}
+            {% comment %} <pre class= "d-flex"><div class="text-warning">Name: </div>     <div>{{message.name}}</div></pre>
+            <pre class= "d-flex"><div class="text-warning">E-mail: </div>   <div>{{message}}</div></pre>
+            <pre class= "d-flex"><div class="text-warning">Content: </div>  <div>{{message.content}}</div></pre>
+             
+            <div class= "dateclass d-flex justify-content-end"><div>{{message.date}}</div></div> {% endcomment %}
+            <div class="row my-1">
+                <div class="col-2 text-warning">Name: </div>
+                <div class="col-10">{{message.name}}</div>
+            </div>
+            <div class="row my-1">
+                <div class="col-2 text-warning">E-mail: </div>
+                <div class="col-10">{{message.email}}</div>
+            </div>
+            <div class="row my-1">
+                <div class="col-2 text-warning">Content: </div>
+                <div class="col-10">{{message.content}}</div>
+            </div>
+            <div class="row my-1">
+                <div class="col-2 text-warning">Message: </div>
+                <div class="col-10">{{message.message}}</div>
+            </div>
+            <div class= "dateclass d-flex justify-content-end"><div>{{message.date}}</div></div>
+
+            
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

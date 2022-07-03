@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+{% block content %}
+<div>
+    
+    <form action="" method='POST' class="myform mx-5 text-light py-3">
+        <h1 class='text-center my-3'>
+        Contact Me
+    </h1>
+    {% csrf_token %}
+        
+            <div class="mb-3">
+                <label for="name" class="form-label">Name: </label>
+                <input type="text"
+                  class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="Enter Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail: </label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="Enter E-mail Adress">
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Content: </label>
+                <input type="text"
+                  class="form-control" name="content" id="content" aria-describedby="helpId" placeholder="Enter Content">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" name="message" id="message" rows="3" placeholder="Write Message"></textarea>
+            </div>
+
+        
+        <div class="mybuttondiv">
+            <div>
+            {% if messages %}
+            <ul class="messages">
+            {% for message in messages %}
+            <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+            </div>
+            
+                <button type="submit" class="mybutton btn btn-warning">Send</button>
+            
+        </div>
+    </form>
+    
+</div>
+{% endblock content %}

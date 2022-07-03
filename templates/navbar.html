@@ -1,0 +1,25 @@
+<nav class="mynav fixed-top navbar navbar-expand-lg navbar-light bg-warning py-4">
+    <div class="container">
+      {% comment %} <a class="navbar-brand" href="#">Navbar</a> {% endcomment %}
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+              <li class="navhover nav-item active  mx-3">
+                  <a class="nav-link text-light" href={% url 'home' %}>Home <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="navhover nav-item mx-3">
+                  <a class="nav-link text-light" href={% url 'about' %}>About Me</a>
+              </li>
+            <li class="navhover nav-item mx-3">
+                <a class="nav-link text-light" href={% url 'sites' %}>My Sites</a>
+            </li>
+            <li class="navhover nav-item mx-3">
+                <a class="nav-link text-light" href={% url 'contact' %}>Contact</a>
+            </li>
+          </ul>
+      </div>
+</div>
+</nav>
